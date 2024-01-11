@@ -25,6 +25,13 @@ const STUDENTS = {
       img: "https://upload.wikimedia.org/wikipedia/commons/4/46/Leonardo_Dicaprio_Cannes_2019.jpg",
     },
     {
+      id: 4,
+      name: "Hugh Jackman",
+      score: "A+",
+      percentage: "99%",
+      img: "https://m.media-amazon.com/images/M/MV5BNDExMzIzNjk3Nl5BMl5BanBnXkFtZTcwOTE4NDU5OA@@._V1_.jpgQ",
+    },
+    {
       id: 5,
       name: "Danial craig",
       score: "A+",
@@ -96,6 +103,13 @@ const STUDENTS = {
       score: "A+",
       percentage: "85%",
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROMUPzuXIS_-001gdqJmebiUogzYdnphQwEQ&usqp=CAU",
+    },
+    {
+      id: 5,
+      name: "Elton John",
+      score: "A+",
+      percentage: "85%",
+      img: "https://m.media-amazon.com/images/M/MV5BMjM3Njk3Nzc4MF5BMl5BanBnXkFtZTgwODMzNjUxMzE@._V1_.jpg",
     },
     {
       id: 6,
