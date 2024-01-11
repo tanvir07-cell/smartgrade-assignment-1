@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import avatar from "../../assets/avatar.png";
 
 const STUDENTS = {
@@ -146,7 +146,7 @@ const ShowStudentList = () => {
 
       {STUDENTS.classNameOne.map(({ id, name, img, score, percentage }) => {
         return (
-          <>
+          <Fragment key={id}>
             <tr className="border-b border-[#7ECEB529]">
               <td className="p-5 text-sm md:text-xl">{id}</td>
               <td className="p-5 text-sm md:text-xl">
@@ -166,7 +166,7 @@ const ShowStudentList = () => {
                 {percentage}
               </td>
             </tr>
-          </>
+          </Fragment>
         );
       })}
 
@@ -178,8 +178,8 @@ const ShowStudentList = () => {
 
       {STUDENTS.classNameTwo.map(({ id, name, img, score, percentage }) => {
         return (
-          <>
-            <tr className="border-b border-[#7ECEB529]">
+          <Fragment key={id}>
+            <tr className="border-b border-[#7ECEB529]" key={id}>
               <td className="p-5 text-sm md:text-xl">{id}</td>
               <td className="p-5 text-sm md:text-xl">
                 <div className="flex items-center space-x-3">
@@ -198,7 +198,7 @@ const ShowStudentList = () => {
                 {percentage}
               </td>
             </tr>
-          </>
+          </Fragment>
         );
       })}
     </>
